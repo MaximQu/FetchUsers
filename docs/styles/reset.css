@@ -15,39 +15,6 @@
 	text-shadow: none;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-}
-
-input[type="search"] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-webkit-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 0;
-}
-
-input[type="search"] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
-}
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -74,13 +41,6 @@ a {
 	color: inherit;
 }
 
-audio,
-canvas,
-video {
-	display: inline-block;
-	max-width: 100%;
-}
-
 button,
 html input[type="button"],
 input[type="reset"],
@@ -94,23 +54,12 @@ html input[disabled] {
 	cursor: default;
 }
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 img {
 	display: block;
 	-o-object-fit: contain;
 	object-fit: contain;
 	width: 100%;
 	height: 100%;
-}
-
-textarea {
-	resize: vertical;
-	overflow: auto;
-	vertical-align: top;
 }
 
 button,
@@ -133,16 +82,6 @@ html {
 a,
 button {
 	cursor: revert;
-}
-
-/* removes spacing between cells in tables */
-table {
-	border-collapse: collapse;
-}
-
-/* revert the 'white-space' property for textarea elements on Safari */
-textarea {
-	white-space: revert;
 }
 
 /* reset default text opacity of input placeholder */
@@ -168,15 +107,4 @@ textarea {
 /* apply back the draggable feature - exist only in Chromium and Safari */
 :where([draggable="true"]) {
 	-webkit-user-drag: element;
-}
-
-.hide {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	overflow: hidden;
 }
